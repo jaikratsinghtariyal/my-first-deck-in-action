@@ -23,11 +23,11 @@ jobs:
       with:
         command: "validate"
         options: "--kong-addr ${{ secrets.KONG_ADDR }}" 
-        kong_workspaces: "default"
+        kong_workspaces: "kong"
     - name: decK diff
       id: decK_diff
       uses: ./
       with:
         command: "diff"
         options: "--kong-addr ${{ secrets.KONG_ADDR }}" 
-        kong_workspaces: "default"
+        kong_workspaces: "kong"
