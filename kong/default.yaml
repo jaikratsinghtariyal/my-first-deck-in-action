@@ -85,7 +85,7 @@ services:
   port: 8089
   protocol: http
   read_timeout: 60000
-  retries: 5
+  retries: 10
   routes:
   - https_redirect_status_code: 426
     methods:
