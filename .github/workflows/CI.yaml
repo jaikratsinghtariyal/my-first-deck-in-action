@@ -25,11 +25,11 @@ jobs:
       with:
         command: "validate"
         options: "--konnect-addr https://konnect.konghq.com/"
-        kong_workspaces: "kong"
+        kong_workspaces: "default"
     - name: decK diff
       id: decK_diff
       uses: ./
       with:
         command: "diff"
-        options: "--konnect-addr https://konnect.konghq.com/"
-        kong_workspaces: "kong"
+        options: "--konnect-addr https://konnect.konghq.com/" 
+        kong_workspaces: "default"
