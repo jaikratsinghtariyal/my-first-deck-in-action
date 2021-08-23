@@ -135,7 +135,7 @@ upstreams:
         successes: 0
       http_path: /
       https_verify_certificate: true
-      timeout: 1
+      timeout: 10
       type: http
       unhealthy:
         http_failures: 0
