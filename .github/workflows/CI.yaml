@@ -18,7 +18,7 @@ jobs:
       with:
         command: "ping"
         #options: "--kong-addr ${{ secrets.KONG_ADDR }}" 
-        options: "--konnect-addr https://konnect.konghq.com/ --konnect-email singhjaikrat@gmail.com --konnect-password Jaik@123"
+        options: "--konnect-addr https://konnect.konghq.com:8001/ --konnect-email singhjaikrat@gmail.com --konnect-password Jaik@123"
     - name: decK validate
       id: decK_validate
       uses: ./
