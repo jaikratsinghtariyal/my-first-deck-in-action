@@ -8,7 +8,6 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
- 
     steps:
     - uses: actions/checkout@v2
       name: "checkout"
@@ -17,8 +16,8 @@ jobs:
       uses: ./
       with:
         command: "ping"
-        #options: "--kong-addr ${{ secrets.KONG_ADDR }}" 
-        options: "--konnect-addr https://konnect.konghq.com:8001/ --konnect-email singhjaikrat@gmail.com --konnect-password Jaik@123"
+        options: "--kong-addr ${{ secrets.KONG_ADDR }}" 
+        #options: "--konnect-addr https://konnect.konghq.com:8001/ --konnect-email singhjaikrat@gmail.com --konnect-password Jaik@123"
     - name: decK validate
       id: decK_validate
       uses: ./
