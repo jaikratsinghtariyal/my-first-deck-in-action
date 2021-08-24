@@ -18,18 +18,18 @@ jobs:
       with:
         command: "ping"
         #options: "--kong-addr ${{ secrets.KONG_ADDR }}" 
-        options: "--konnect-addr https://konnect.konghq.com/"
+        options: "--konnect-addr https://konnect.konghq.com/ --konnect-email singhjaikrat@gmail.com --konnect-password Jaik@123"
     - name: decK validate
       id: decK_validate
       uses: ./
       with:
         command: "validate"
-        options: "--konnect-addr https://konnect.konghq.com/"
+        options: "--konnect-addr https://konnect.konghq.com/ --konnect-email singhjaikrat@gmail.com --konnect-password Jaik@123"
         kong_workspaces: "default"
     - name: decK diff
       id: decK_diff
       uses: ./
       with:
         command: "diff"
-        options: "--konnect-addr https://konnect.konghq.com/" 
+        options: "--konnect-addr https://konnect.konghq.com/ --konnect-email singhjaikrat@gmail.com --konnect-password Jaik@123" 
         kong_workspaces: "default"
